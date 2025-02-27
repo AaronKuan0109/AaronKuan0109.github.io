@@ -203,7 +203,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2025-02-27 10:29:20" itemprop="dateModified" datetime="2025-02-27T10:29:20+08:00">2025-02-27</time>
+      <time title="修改時間：2025-02-27 10:43:25" itemprop="dateModified" datetime="2025-02-27T10:43:25+08:00">2025-02-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -228,7 +228,9 @@
           <h1 id="Hexo-新文章生成與上傳指南"><a href="#Hexo-新文章生成與上傳指南" class="headerlink" title="Hexo 新文章生成與上傳指南"></a>Hexo 新文章生成與上傳指南</h1><p>本指南將詳細介紹如何使用 Hexo 生成一篇新的文章（post），設定文章的參數，並在修改完成後上傳到遠端伺服器（如 GitHub Pages）。</p>
 <h2 id="1-生成新文章"><a href="#1-生成新文章" class="headerlink" title="1. 生成新文章"></a>1. 生成新文章</h2><p>使用以下命令生成一篇新的文章：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo new <span class="string">&quot;我的新文章&quot;</span></span><br></pre></td></tr></table></figure>
-
+<p>如果你希望將文章存放在特定目錄下，例如 “projects” 目錄，可以這樣做：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new projects <span class="string">&quot;我的新專案文章&quot;</span></span><br></pre></td></tr></table></figure>
+<p>這將會在 source&#x2F;_posts&#x2F;projects&#x2F; 目錄下建立 我的新專案文章.md</p>
 <h2 id="2-文章的標題設置"><a href="#2-文章的標題設置" class="headerlink" title="2. 文章的標題設置"></a>2. 文章的標題設置</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: HEXO基本語法         <span class="comment"># 文章的標題</span></span><br><span class="line"><span class="built_in">date</span>: 2024-10-28 10:00:00   <span class="comment"># 發佈日期和時間</span></span><br><span class="line">categories: 技術            <span class="comment"># 文章分類，可以是單個或多個分類</span></span><br><span class="line">tags:</span><br><span class="line">  - Hexo                    <span class="comment"># 標籤，可以添加多個標籤</span></span><br><span class="line">  - 筆記</span><br><span class="line">author: AaronKuan           <span class="comment"># 作者名稱，如果想與默認作者不同</span></span><br><span class="line">description: HEXO基本語法筆記整理      <span class="comment"># 文章簡單介紹或摘要，會生成對應的連接而非整篇文章</span></span><br></pre></td></tr></table></figure>
 <h2 id="3-撰寫文章內容"><a href="#3-撰寫文章內容" class="headerlink" title="3. 撰寫文章內容"></a>3. 撰寫文章內容</h2><p>文章內容使用 Markdown 語法撰寫，這是一種輕量級的標記語言，簡單易學。例如：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 這是文章的大標題</span></span><br><span class="line"></span><br><span class="line">這是文章的第一段，介紹這篇文章的內容。</span><br><span class="line"></span><br><span class="line"><span class="comment">## 這是副標題</span></span><br><span class="line"></span><br><span class="line">- 清單項目 1</span><br><span class="line">- 清單項目 2</span><br></pre></td></tr></table></figure>
